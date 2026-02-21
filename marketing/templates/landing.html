@@ -1,17 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Special Offer</title>
+    <meta charset="UTF-8">
+    <title>WhatsApp Engine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            max-width: 600px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .btn {
+            background: white;
+            color: #128C7E;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.08);
+            background: #f3f3f3;
+        }
+
+        .features {
+            padding: 80px 20px;
+            text-align: center;
+            background: #111827;
+        }
+
+        .features h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .feature-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card {
+            background: #1f2937;
+            padding: 30px;
+            border-radius: 15px;
+            width: 280px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            background: #273549;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0f172a;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+    </style>
 </head>
-<body style="text-align:center; margin-top:100px; font-family:Arial;">
+<body>
 
-    <h1>🔥 Get a Special Offer Today!</h1>
-    <p>Limited time offer. Chat with us now to claim!</p>
+    <section class="hero">
+        <h1>🚀 WhatsApp Engine</h1>
+        <p>Automate, scale, and manage your WhatsApp marketing campaigns effortlessly.</p>
+        <a href="#" class="btn">Start Now</a>
+    </section>
 
-    <a href="https://wa.me/2349122092327?text=Hello%20I%20want%20the%20special%20offer"
-       style="background:green; color:white; padding:20px; text-decoration:none; font-size:20px;">
-       Chat on WhatsApp
-    </a>
+    <section class="features">
+        <h2>Why Choose Us?</h2>
+        <div class="feature-box">
+            <div class="card">
+                <h3>⚡ Fast Automation</h3>
+                <p>Send thousands of messages instantly with smart scheduling.</p>
+            </div>
+            <div class="card">
+                <h3>📊 Analytics</h3>
+                <p>Track delivery, response rates and campaign performance.</p>
+            </div>
+            <div class="card">
+                <h3>🔐 Secure</h3>
+                <p>Your data and customer messages are fully protected.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 WhatsApp Engine. Built with Django.
+    </footer>
 
 </body>
 </html>
